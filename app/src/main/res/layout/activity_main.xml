@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="com.example.go.pokemnemonics.MainActivity">
+
+    <TextView
+        android:id="@+id/NUMBER"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="70dp"
+        android:text="@string/NUMBER"
+        android:gravity="center"
+        tools:layout_editor_absoluteX="162dp"
+        tools:layout_editor_absoluteY="433dp"
+        android:layout_below="@+id/img"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="180dp"
+        android:layout_height="250dp"
+        tools:layout_editor_absoluteX="25dp"
+        tools:layout_editor_absoluteY="31dp"
+
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/speak"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Type In Message"
+        android:inputType="textPersonName"
+        android:text="Hello"
+        android:layout_below="@+id/NUMBER"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp" />
+
+    <Button
+        android:id="@+id/speakbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SPEAK"
+        android:layout_below="@+id/speak"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp" />
+</RelativeLayout >
